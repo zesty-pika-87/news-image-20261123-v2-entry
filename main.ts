@@ -9,7 +9,8 @@
 // Politics, Disaster, Crime) instead of by region colour, the numbers band
 // is light cream, and the date check is one quiet line: every story here is
 // from Monday 23 November 2026. The program copies the drawn front page
-// (entry.png, 1024 by 1024) to /output/entry.png.
+// (entry.png, 1024 by 1024) to /output/entry.png. The copy is deterministic:
+// the same bytes land in /output on every run, with no network involved.
 //
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
